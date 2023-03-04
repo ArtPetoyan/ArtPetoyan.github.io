@@ -16,10 +16,7 @@ body {
   z-index: 9999;
   transform: scale(0.8) rotateY(180deg);
 }
-#win3Logo {
-  transform: scale(2.2);
-}
-#win10Img, #win11Img {
+#win10Img {
   transform: scale(0.7);
 }
 #win7Img {
@@ -27,6 +24,9 @@ body {
 }
 #winXPImg {
   transform: scale(0.9);
+}
+#win11Img {
+  width: 458px;
 }
 .modal-body a {
   transition: 300ms;
@@ -38,8 +38,11 @@ body {
 .contact {
   padding: 5px;
 }
-
+.windowImgModal {
+  max-width: 500px;
+}
 #phone, #email, #github, #linkedin {
+  transform: scale(0.5);
   top: 78px;
   left: 211px
 }
@@ -62,12 +65,12 @@ body {
   left: 128px;
 }
 #firstCode {
-    width: 250px;
-    height: 90px;
-    border: 2px solid rgb(255, 255, 255);
-    line-height: 1.1;
-    top: 240px;
-    left: 442px;
+  width: 250px;
+  height: 90px;
+  border: 2px solid rgb(255, 255, 255);
+  line-height: 1.1;
+  top: 240px;
+  left: 442px;
 }
 #firstCode span {
   font-family:'Courier New', Courier, monospace
@@ -103,7 +106,14 @@ body {
   top: 0;
   transition: 500ms;
   opacity: 1;
-  transform: scale(1.4);
+  transform: scale(0.8);
+}
+#win3Logo {
+  transform: scale(1.5);
+}
+.vista {
+  transform: scale(1);
+  z-index: 1;
 }
 .spanBottom, .spanTop {
   font-size: 16px;
@@ -137,11 +147,6 @@ body {
   opacity: 1;
   display: inline;
   transition: 300ms;
-
-}
-.vista {
-  transform: scale(1.2);
-  z-index: 1;
 }
 .logoBtn, #centerLogo {
   width: 50px;
@@ -186,17 +191,17 @@ code {
 }
 @keyframes circle {
   from {
-    transform: scale(1.2) rotate(-180deg);
+    transform: rotate(-180deg);
   }
   to {
-    transform: scale(1.2) rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 @keyframes unCircle {
   from {
-    transform: scale(1.2) rotate(-180deg);
+    transform: rotate(-180deg);
   }
   to {
-    transform: scale(1.2) rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
