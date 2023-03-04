@@ -41,6 +41,9 @@ body {
 .contact {
   padding: 5px;
 }
+.contactLogo {
+  top: 78px;
+}
 #phone {
   left: 211px
 }

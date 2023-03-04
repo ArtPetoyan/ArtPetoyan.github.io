@@ -3,7 +3,6 @@ let textHeader = 'Web CV in front of the history Microsoft Windows';
 let logos = document.querySelectorAll('.logoBtn');
 let pointer = document.querySelector('#pointer');
 let k = 0;
-document.querySelector('#logos').style.transform = 'scale(1)';
 onmousemove = el => {
   document.querySelector('#pointer').style = `
   top: ${el.y}px;
@@ -73,11 +72,4 @@ let text = (text1, that, time) => {
     };
   }, time)
 }
-document.querySelector('#win11Img').style.width  = `${innerWidth - 819}px`;
-document.querySelectorAll('.contactLogo').forEach(el => {
-  el.style.top = `${(innerHeight) / 9.436}px`;
-  
-});
-// document.querySelector('.contactLogo').style.top = (innerHeight) / 9.436;
-// console.log(innerHeight)
-// phone.style = `left: `;
+
