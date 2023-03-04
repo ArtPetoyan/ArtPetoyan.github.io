@@ -5,20 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="icon" href="win/AP.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/win/AP.png">
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="css/style.css">
   <title>Artur Petoyan</title>
 </head>
 <body>
   <main class="d-flex justify-content-center .bg-light-subtle">
     <div id="cursor">
-      <!-- <svg id="pointer" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-windows" viewBox="0 0 16 16">
-        <path d="M6.555 1.375 0 2.237v5.45h6.555V1.375zM0 13.795l6.555.933V8.313H0v5.482zm7.278-5.4.026 6.378L16 16V8.395H7.278zM16 0 7.33 1.244v6.414H16V0z"/>
-      </svg> -->
       <svg xmlns="http://www.w3.org/2000/svg" style = "display: none" width="40" height="40" fill="blue" class="bi bi-hand-index" viewBox="0 0 16 16" id="pointer">
         <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
-        <!-- <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/> -->
-        <!-- <path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 0 0 1 0V6.435l.106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 1 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.118a.5.5 0 0 1-.447-.276l-1.232-2.465-2.512-4.185a.517.517 0 0 1 .809-.631l2.41 2.41A.5.5 0 0 0 6 9.5V1.75A.75.75 0 0 1 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v6.543L3.443 6.736A1.517 1.517 0 0 0 1.07 8.588l2.491 4.153 1.215 2.43A1.5 1.5 0 0 0 6.118 16h6.302a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z"/> -->
       </svg>
     </div>
     <div class="w-60">
@@ -30,7 +25,7 @@
       <div class="logoBtn hide">
         <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal1" onclick="win1()">
          <div class="divHov">
-           <img src="win/logo/win1.png" style="top: -7px" class="imgLogo z-index-0 border-none position-absolute" alt="" >
+           <img src="img/win/logo/win1.png" style="top: -7px" class="imgLogo z-index-0 border-none position-absolute" alt="" >
            <span class="spanTop">Hello Word</span>
            <span class="spanBottom">Windows 1</span>
          </div>
@@ -39,7 +34,7 @@
       <div class="logoBtn hide">
         <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal2">
           <div class="divHov">
-            <img src="win/logo/win3.png" alt="" id="win3Logo" class="imgLogo" >
+            <img src="img/win/logo/win3.png" alt="" id="win3Logo" class="imgLogo" >
             <span class="spanBottom">Windows 3.1</span>
             <span class="spanTop">About me</span>
           </div>
@@ -49,7 +44,7 @@
         <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal3">
           <div class="divHov">
 
-            <img src="win/logo/98.svg" alt="" class="imgLogo" >
+            <img src="img/win/logo/98.svg" alt="" class="imgLogo" >
             <span class="spanBottom">Windows 98</span>
             <span class="spanTop">Work</span>
 
@@ -60,7 +55,7 @@
         <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal4">
           <div class="divHov">
 
-            <img src="win/logo/xp.png" alt="" class="imgLogo" >
+            <img src="img/win/logo/xp.png" alt="" class="imgLogo" >
             <span class="spanBottom">Windows XP</span>
             <span class="spanTop">Education</span>
 
@@ -71,19 +66,18 @@
         <button class="position-absolute border-0" id="logoCenter">
           
           <div class="divHov">
-            <img src="win/logo/winVista.png" alt="" class="vista top-0 z-index-0 border-none position-absolute " >
+            <img src="img/win/logo/winVista.png" alt="" class="vista top-0 z-index-0 border-none position-absolute " >
             <span class="spanTop">Let's Start</span>
             <span class="spanBottom"></span>
 
           </div>
         </button>
-        <!-- <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal1">Skills</button> -->
       </div>
       <div class="logoBtn hide">
         <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal5">
           <div class="divHov">
 
-            <img src="win/logo/win7.png" alt="" class="imgLogo" >
+            <img src="img/win/logo/win7.png" alt="" class="imgLogo" >
             <span class="spanBottom">Windows 7</span>
             <span class="spanTop">Skills</span>
           
@@ -94,7 +88,7 @@
         <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal6">
           <div class="divHov">
 
-            <img src="win/logo/win8.png" style="transform: scale(1);" alt="" class="imgLogo">
+            <img src="img/win/logo/win8.png" style="transform: scale(1);" alt="" class="imgLogo">
             <span class="spanBottom">Windows 8</span>
             <span class="spanTop">Software</span>
           
@@ -105,7 +99,7 @@
         <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal7">
           <div class="divHov">
 
-            <img src="win/logo/win10.png" style="transform: scale(1);" alt="" class="imgLogo" >
+            <img src="img/win/logo/win10.png" style="transform: scale(1);" alt="" class="imgLogo" >
             <span class="spanBottom">Windows 10</span>
             <span class="spanTop">Languages</span>
           
@@ -116,25 +110,13 @@
         <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal8">
           <div class="divHov">
 
-            <img src="win/logo/win11.png" style="transform: scale(1);" alt="" class="imgLogo" >
+            <img src="img/win/logo/win11.png" style="transform: scale(1);" alt="" class="imgLogo" >
             <span class="spanBottom">Windows 11</span>
             <span class="spanTop">Contacts</span>
           
           </div>
         </button>
       </div>
-
-
-      <!-- <img src="win/logo/win95.png" alt="" class="imgLogo hide">
-      <img src="win/logo/98.svg" alt="" class="imgLogo hide">
-      <img src="win/logo/winXP.jpg" alt="" class="imgLogo hide">
-      <button class="btn1" onclick="fn(130)">
-        <img src="win/logo/winVista.png" alt="" id="vista">
-      </button>
-      <img src="win/logo/win7.png" alt="" class="imgLogo hide">
-      <img src="win/logo/win8.png" alt="" class="imgLogo hide">
-      <img src="win/logo/win10.png" alt="" class="imgLogo hide">
-      <img src="win/logo/win11.png" alt="" class="imgLogo hide"> -->
     </div>
   </main>
  <container>
@@ -148,7 +130,7 @@
                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
              </div>
              <div class="modal-body d-flex justify-content-center align-items-center">
-               <img src="win/Win1.png" alt="win1" class="mx-auto my-0 d-block"">
+               <img src="img/win/Win1.png" alt="win1" class="mx-auto my-0 d-block"">
                <div id="Win1Window"></div>
                <div id="firstCode">
                 <span>
@@ -183,7 +165,7 @@
                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
              </div>
              <div class="modal-body d-flex justify-content-center align-items-center">
-               <img src="win/win31.png" alt="win98" id="win3Img"  class="mx-auto my-0 d-block" >
+               <img src="img/win/win31.png" alt="win98" id="win3Img"  class="mx-auto my-0 d-block" >
              </div>
              <div class="modal-footer">
                <button type="button" class="btn border-0 btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -202,7 +184,7 @@
                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
              </div>
              <div class="modal-body d-flex justify-content-center align-items-center">
-               <img src="win/98Work.png" alt="win98" id="win98Img"  class="mx-auto my-0 d-block"">
+               <img src="img/win/98Work.png" alt="win98" id="win98Img"  class="mx-auto my-0 d-block"">
              </div>
              <div class="modal-footer">
                <button type="button" class="btn border-0 btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -220,7 +202,7 @@
              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
            </div>
            <div class="modal-body d-flex justify-content-center align-items-center">
-             <img src="win/xp1.png" alt="winXP" id="winXPImg"  class="mx-auto my-0 d-block"">
+             <img src="img/win/xp1.png" alt="winXP" id="winXPImg"  class="mx-auto my-0 d-block"">
            </div>
            <div class="modal-footer">
              <button type="button" class="btn border-0 btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -239,7 +221,7 @@
            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
          </div>
          <div class="modal-body d-flex justify-content-center align-items-center">
-           <img src="win/win7End.png" alt="win7" id="win7Img"  class="mx-auto my-0 d-block"">
+           <img src="img/win/win7End.png" alt="win7" id="win7Img"  class="mx-auto my-0 d-block"">
          </div>
          <div class="modal-footer">
            <button type="button" class="btn border-0 btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -258,7 +240,7 @@
            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
          </div>
          <div class="modal-body d-flex justify-content-center align-items-center">
-           <img src="win/WIN8.png" alt="win8" id="win8Img"  class="mx-auto my-0 d-block"">
+           <img src="img/win/WIN8.png" alt="win8" id="win8Img"  class="mx-auto my-0 d-block"">
          </div>
          <div class="modal-footer">
            <button type="button" class="btn border-0 btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -277,7 +259,7 @@
            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
          </div>
          <div class="modal-body d-flex justify-content-center align-items-center">
-           <img src="win/win10.png" alt="win10" id="win10Img"  class="mx-auto my-0 d-block"">
+           <img src="img/win/win10.png" alt="win10" id="win10Img"  class="mx-auto my-0 d-block"">
          </div>
          <div class="modal-footer">
            <button type="button" class="btn border-0 btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -296,7 +278,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body d-flex justify-content-center align-items-center">
-          <img src="win/win111.png" alt="win11" id="win11Img" class="mx-auto my-0 d-block">
+          <img src="img/win/win111.png" alt="win11" id="win11Img" class="mx-auto my-0 d-block">
           <a href="tel:+37477036016" id="phone" target="_blank" class="position-absolute rounded">
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-telephone contact" viewBox="0 0 16 16">
               <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
@@ -328,7 +310,7 @@
   </div>
 </div>
  </container>
-  <script src="script.js"></script>
+  <script src="JavaScript/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>

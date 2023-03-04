@@ -15,9 +15,6 @@ body {
   position: absolute;
   z-index: 9999;
   transform: scale(0.8) rotateY(180deg);
-
-  /* margin-left: -5px;
-  margin-top: -15px; */
 }
 #win3Logo {
   transform: scale(2.2);
@@ -184,6 +181,9 @@ code {
 #win3Img {
   transform: scale(0.55);
 }
+@media screen {
+  
+}
 @keyframes circle {
   from {
     transform: scale(1.2) rotate(-180deg);
@@ -200,11 +200,3 @@ code {
     transform: scale(1.2) rotate(-360deg);
   }
 }
-
-/* .modal {
-  width: 80%;
-  margin: 0 auto;
-} */
-/* .modal-dialog {
-  display: contents;
-} */

@@ -23,13 +23,10 @@ logos.forEach(el => {
 
 setTimeout(_ => text(textHeader, document.querySelector('.h1'), 100), 200);
 
-
-
-
 function win1() {
   let win1Text = document.querySelector('#Win1Window');
   if(!win1Text.innerHTML.trim()) {
-    text(textHistoryWin1, win1Text, 30)
+    text(textHistoryWin1, win1Text, 30);
   }
 }
 function logosOpen() {
