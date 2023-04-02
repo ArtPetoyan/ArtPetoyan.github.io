@@ -3,10 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family:'Times New Roman', Times, serif;
-  cursor:none;
+  cursor: url(../img/win/logo/pointer.png), auto;
 }
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
-  cursor: none;
+  cursor: url(../img/win/logo/pointer.png), auto;
 }
 body {
   overflow: hidden;
@@ -41,19 +41,9 @@ body {
 .windowImgModal {
   max-width: 500px;
 }
-#phone, #email, #github, #linkedin {
-  transform: scale(0.5);
+.contactLogo{
+  transform: scale(0.8);
   top: 78px;
-  left: 211px
-}
-#email {
-  left: 325.5px;
-}
-#linkedin {
-  left: 436px;
-}
-#github {
-  left: 548px;
 }
 #Win1Window, #firstCode {
   width: 310px;
