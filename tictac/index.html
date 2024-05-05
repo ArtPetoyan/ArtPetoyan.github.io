@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Doc</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+	
+
+</style>
+<body style="background-image: url(Images/2.jpg);">
+	<main>
+	<div class="main">
+		<div class="div1" id="divGrid1" onclick="fn(1)"><img src="Images/x.png" id="img1" style="display: none;">
+			<img src="Images/o.png" id="img11" style="display: none;"></div>
+		<div class="div1" id="divGrid2" onclick="fn(2)"><img src="Images/x.png" id="img2" style="display: none;">
+			<img src="Images/o.png" id="img22" style="display: none;"></div>
+		<div class="div1" id="divGrid3" onclick="fn(3)"><img src="Images/x.png" id="img3" style="display: none;">
+			<img src="Images/o.png" id="img33" style="display: none;"></div>
+		<div class="div1" id="divGrid4" onclick="fn(4)"><img src="Images/x.png" id="img4" style="display: none;">
+			<img src="Images/o.png" id="img44" style="display: none;"></div>
+		<div class="div1" id="divGrid5" onclick="fn(5)"><img src="Images/x.png" id="img5" style="display: none;">
+			<img src="Images/o.png" id="img55" style="display: none;"></div>
+		<div class="div1" id="divGrid6" onclick="fn(6)"><img src="Images/x.png" id="img6" style="display: none;">
+			<img src="Images/o.png" id="img66" style="display: none;"></div>
+		<div class="div1" id="divGrid7" onclick="fn(7)"><img src="Images/x.png" id="img7" style="display: none;">
+			<img src="Images/o.png" id="img77" style="display: none;"></div>
+		<div class="div1" id="divGrid8" onclick="fn(8)"><img src="Images/x.png" id="img8" style="display: none;">
+			<img src="Images/o.png" id="img88" style="display: none;"></div>
+		<div class="div1" id="divGrid9" onclick="fn(9)"><img src="Images/x.png" id="img9" style="display: none;">
+			<img src="Images/o.png" id="img99" style="display: none;"></div>
+			
+<button type="submit"><a href="">New Game</a></button></div>
+</main>
+
+<script>
+let i = 0, a = 0, x = 0;
+let black = "color: black;";
+let white = "color: white;";
+let dispBlock = "display: block";
+let dispNone = "display: none";
+	
+function fn(a) {
+	let imgx = document.getElementById(`img${a}`);
+	let imgxx = document.getElementById(`img${a}${a}`);
+	let divx = document.getElementById(`divGrid${a}`)
+	imgx.style = dispBlock;
+	imgxx.style = dispNone;
+	i++;
+	if (i % 2 == 0) {
+		imgx.style = dispNone;
+		divx.style = black;
+		imgxx.style = dispBlock
+	} else if (i % 2 == 1) {
+		imgx.style = dispBlock;
+		divx.style = white;
+	};
+	columns();
+	rows();
+	arrowRC();
+	if (x == 1) {
+		setTimeout(function () {
+			alert("X, you are smarter than O!!!");
+			location.reload()
+		}, 300)
+	} else if (x == 2) {
+		setTimeout(function () {
+			alert("O, It's awesome!!! X can you win this machine?");
+			location.reload()
+		}, 300);
+	}
+	return true;
+}
+
+function columns() {
+	for(let i = 1; i < 4; i++) {
+		let imgA = document.getElementById(`divGrid${i}`);
+		let imgAA = document.getElementById(`divGrid${i + 3}`);
+		let imgAAA = document.getElementById(`divGrid${i + 6}`);
+		if (imgA.style.color == "black" && imgAA.style.color == "black" && imgAAA.style.color == "black") {
+			imgA.style.border = "5px solid green";
+			imgAA.style.border = "5px solid green";
+			imgAAA.style.border = "5px solid green";
+			x = 2;
+		} 
+		if (imgA.style.color == "white" && imgAA.style.color == "white" && imgAAA.style.color == "white") {
+			imgA.style.border = "5px solid green";
+			imgAA.style.border = "5px solid green";
+			imgAAA.style.border = "5px solid green";
+			x = 1;
+		} 
+	}
+	return true;
+}
+
+function rows() {
+	for(let i = 1; i < 8; i += 3) {
+		let imgA = document.getElementById(`divGrid${i}`);
+		let imgAA = document.getElementById(`divGrid${i + 1}`);
+		let imgAAA = document.getElementById(`divGrid${i + 2}`);
+		if (imgA.style.color == "black" && imgAA.style.color == "black" && imgAAA.style.color == "black") {
+			imgA.style.border = "5px solid green";
+			imgAA.style.border = "5px solid green";
+			imgAAA.style.border = "5px solid green";
+			x = 2;
+		} 
+		if (imgA.style.color == "white" && imgAA.style.color == "white" && imgAAA.style.color == "white") {
+			imgA.style.border = "5px solid green";
+			imgAA.style.border = "5px solid green";
+			imgAAA.style.border = "5px solid green";
+			x = 1;
+		} 
+	}
+	return true;
+}
+
+function arrowRC(){
+	let imgA = document.getElementById(`divGrid${1}`);
+	let imgAA = document.getElementById(`divGrid${5}`);
+	let imgAAA = document.getElementById(`divGrid${9}`);
+	let imgAAAA = document.getElementById(`divGrid${3}`);
+	let imgAAAAA = document.getElementById(`divGrid${7}`);
+		
+	if (imgA.style.color == "black" && imgAA.style.color == "black" && imgAAA.style.color == "black") {
+		imgA.style.border = "5px solid green";
+		imgAA.style.border = "5px solid green";
+		imgAAA.style.border = "5px solid green";
+		x = 2;
+	} 
+	if (imgA.style.color == "white" && imgAA.style.color == "white" && imgAAA.style.color == "white") {
+		imgA.style.border = "5px solid green";
+		imgAA.style.border = "5px solid green";
+		imgAAA.style.border = "5px solid green";
+		x = 1;
+	}
+	if (imgAA.style.color == "black" && imgAAAA.style.color == "black" && imgAAAAA.style.color == "black") {
+		imgAA.style.border = "5px solid green";
+		imgAAAA.style.border = "5px solid green";
+		imgAAAAA.style.border = "5px solid green";
+		x = 2;
+	} 
+	if (imgAA.style.color == "white" && imgAAAA.style.color == "white" && imgAAAAA.style.color == "white") {
+		imgAA.style.border = "5px solid green";
+		imgAAAA.style.border = "5px solid green";
+		imgAAAAA.style.border = "5px solid green";
+		x = 1;
+	} 
+	return true;
+}
+
+</script>
+
+</body>
+</html>
