@@ -19,7 +19,7 @@
 	border-radius: 50%;
 	display: flex;
 	justify-content: space-evenly;
-	transition: 2500ms;
+	transition: 300ms;
 	transition-timing-function: cubic-bezier(0, 0, 0.6, 1.5);
 	cursor: pointer;
   }
