@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Articles</title>
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+<header>
+	<div id="menuBar">
+		<div class="menuItem" id="home">Home</div>
+		<div class="menuItem" id="about"> About Us
+			<div id = "aboutDropDown">
+				<div class="dropDown" id="about1">About</div>
+				<div class="dropDown" id="about2">History</div>
+				<div class="dropDown" id="about3">Future</div>
+			</div>
+		</div>
+		<div class="menuItem" id="staff"> Staff
+			<div id="staffDropDown">
+				<div class="dropDown" id="staff1">Head</div>
+				<div class="dropDown" id="staff2">PM</div>
+				<div class="dropDown" id="staff3">SMM</div>
+				<div class="dropDown" id="staff4">Programmers</div>
+				<div class="dropDown" id="staff5">Other</div>
+			</div>
+		</div>
+		<div class="menuItem" id="location">Address</div>
+		<div class="menuItem" id="massage">Contact Us</div>
+	</div>
+</header>
+<main>
+<form action="" id="form">
+	<div id="inputDiv">
+		<div><input type="text" id="file" placeholder="https://source.unsplash.com/random/800x600"></div>
+		<div><input type="text" id="title" placeholder="Title*"></div>
+		<div><input type="text" id = "mainText"placeholder="Description"></div>
+		<div><input type="button" id="createButton" value="Add Article"></div>
+	</div>
+</form>
+	<article id = 'article'></article>
+</main>
+
+<script src="javaScript.js"></script>
+</body>
+</html>
+

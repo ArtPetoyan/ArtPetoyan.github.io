@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+	transition: 500ms;
+}
+body {
+	background-color: rgb(238, 202, 156);
+	overflow: hidden;
+	height: 100%;
+}
+main {
+	height: 800px;
+	position: absolute;
+}
+.imgClass {
+	width: 100%;
+	margin: auto;
+	transition: 600ms;
+}
+#ground {
+	width: 2000px; 
+	height: 700px;
+	margin-top: 500px;
+	margin-left: -250px;
+}
+#sky {
+	width: 2000px;
+	margin-top: -1350px;
+	margin-left: -250px;
+} 
+#stones {
+	width: 350px;
+	margin-top: -750px;
+	margin-left: 80%;
+	position: absolute;
+	z-index: -1;
+} 
+#tree {
+	width: 500px;
+	margin-top: -950px;
+	position: absolute;
+	z-index: -1;
+}
+#flowers {
+	position: absolute;
+	left: 300px;
+	width: 1000px;
+	margin-top: -350px;
+	z-index: -1;
+} 
+#bee1 {
+	width: 80px;
+	margin-left: 50%;
+	margin-top: -300px;
+}
+#bee2 {
+	width: 70px;
+	margin-left: 70%;
+	margin-top: -100px;
+}
+#bee3{
+	width: 70px;
+	margin-left: 35%;
+	margin-top: 50px;
+}
+#birds {
+	width: 400px;
+	margin-left: 80%;
+	margin-top: -400px;
+}
