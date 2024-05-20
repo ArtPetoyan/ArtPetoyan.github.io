@@ -1,19 +1,24 @@
 let body = document.querySelector('body');
 let menuListAll = document.querySelector('#menuListAll');
-let contentHome = document.querySelector('#contentHome');
+let contentWorks = document.querySelector('#contentWorks');
 let menu = document.querySelector('#menu');
 let count = 0;
 function onOpenSidebar (count) {
 	if(Math.abs(count % 2)) {
-		openSidebar()
+		openSidebar();
+		if (innerWidth < 980) contentWorks.style.display = 'none';
 	} else {
-		closeSidebar()
+		closeSidebar();
+		if (innerWidth < 980) contentWorks.style.display = 'block';
 	}
 }
+
 function openSidebar () {
 	menuListAll.style.marginLeft = "0px";
-		contentHome.style.zIndex = "-99";
-		body.style.setProperty("--somecolor", "#375366cc");
+	menuListAll.style.transition = "500ms";
+	contentWorks.style.zIndex = "-99";
+	body.style.setProperty("--somecolor", "#375366cc");
+	body.style.overflow = 'hidden';
 		for (let i = 1; i <= 3; i++) {
 			(
 				(x) => {
@@ -35,9 +40,10 @@ function openSidebar () {
 }
 function closeSidebar() {
 	body.style.setProperty("--somecolor", "");
-	
-		contentHome.style.zIndex = "0";
+	body.style.overflow = 'auto';
+		contentWorks.style.zIndex = "0";
 		menuListAll.style.marginLeft = "-100%";
+		menuListAll.style.transition = "100ms";
 		for (let i = 1; i <= 3; i++) {
 			(
 				(x) => {
@@ -67,9 +73,9 @@ onclick = (e) => {
 		count % 2 ? count++ : count;
 	}
 };
-
-body.onmousemove = (e) => {
-	contentHome.style.boxShadow = `${e.x / 10 - 10}px ${e.y / 10 - 10}px 50px 20px #18303d`;
+function changeLocation (url) {
+	location.href = url;
+	return;
 }
 body.addEventListener('contextmenu', function(ev) {
     ev.preventDefault();

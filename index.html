@@ -1,318 +1,71 @@
 <!DOCTYPE html>
-<html lang="en" class=".bg-light-subtle">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="icon" href="img/win/AP.png">
-  <link rel="stylesheet" media="screen and (min-width: 800px)" href="css/style1.css">
-  <link rel="stylesheet" media="screen and (max-width: 800px)" href="css/style2.css">
-  <title>Artur Petoyan</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="icon" href="images/AP1.png" style="width: 100px;">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Artur Petoyan</title>
 </head>
 <body>
-  <main class="d-flex justify-content-center .bg-light-subtle">
-    <div id="cursor">
-      <svg xmlns="http://www.w3.org/2000/svg" style = "display: none" width="40" height="40" fill="blue" class="bi bi-hand-index" viewBox="0 0 16 16" id="pointer">
-        <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
-      </svg>
-    </div>
-    <div class="w-60">
-      <h1 class="h1"></h1>
-      <br/>
-      <h4 class="textWin1"></h4>
-    </div>
-    <div id="logos">
-      <div class="logoBtn hide">
-        <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal1" onclick="win1()">
-         <div class="divHov">
-           <img src="img/win/logo/win1.png" style="top: -7px; transform: scale(1.3);" class="imgLogo z-index-0 border-none position-absolute" alt="" >
-           <span class="spanTop">Hello Word</span>
-           <span class="spanBottom">Windows 1</span>
-         </div>
-        </button>
-      </div>
-      <div class="logoBtn hide">
-        <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal2">
-          <div class="divHov">
-            <img src="img/win/logo/win3.png" alt="" id="win3Logo" class="imgLogo" >
-            <span class="spanBottom">Windows 3.1</span>
-            <span class="spanTop">About me</span>
-          </div>
-        </button>
-      </div>
-      <div class="logoBtn hide">
-        <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal3">
-          <div class="divHov">
 
-            <img src="img/win/logo/98.svg" alt="" class="imgLogo" >
-            <span class="spanBottom">Windows 98</span>
-            <span class="spanTop">Work</span>
-
-          </div>
-        </button>
-      </div>
-      <div class="logoBtn hide">
-        <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal4">
-          <div class="divHov">
-
-            <img src="img/win/logo/xp.png" alt="" class="imgLogo" >
-            <span class="spanBottom">Windows XP</span>
-            <span class="spanTop">Education</span>
-
-          </div>
-        </button>
-      </div>
-      <div id="centerLogo" >
-        <button class="position-absolute border-0" id="logoCenter">
-          
-          <div class="divHov">
-            <img src="img/win/logo/winVista.png" alt="" class="vista top-0 z-index-0 border-none position-absolute " >
-            <span class="spanTop">Let's Start</span>
-            <span class="spanBottom"></span>
-
-          </div>
-        </button>
-      </div>
-      <div class="logoBtn hide">
-        <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal5">
-          <div class="divHov">
-
-            <img src="img/win/logo/win7.png" alt="" class="imgLogo" >
-            <span class="spanBottom">Windows 7</span>
-            <span class="spanTop">Skills</span>
-          
-          </div>
-        </button>
-      </div>
-      <div class="logoBtn hide">
-        <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal6">
-          <div class="divHov">
-
-            <img src="img/win/logo/win8.png" style="transform: scale(1);" alt="" class="imgLogo">
-            <span class="spanBottom">Windows 8</span>
-            <span class="spanTop">Software</span>
-          
-          </div>
-        </button>
-      </div>
-      <div class="logoBtn hide">
-        <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal7">
-          <div class="divHov">
-            <img src="img/win/logo/win10.png" style="transform: scale(1);" alt="" class="imgLogo" >
-            <span class="spanBottom">Windows 10</span>
-            <span class="spanTop">Languages</span>
-          </div>
-        </button>
-      </div>
-      <div class="logoBtn hide">
-        <button type="button" class="btn border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal8">
-          <div class="divHov">
-
-            <img src="img/win/logo/win11.png" style="transform: scale(1);" alt="" class="imgLogo" >
-            <span class="spanBottom">Windows 11</span>
-            <span class="spanTop">Contacts</span>
-          
-          </div>
-        </button>
-      </div>
-    </div>
-  </main>
- <container>
-
-   <div>
-       <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog modal-dialog-scrollable modal-lg">
-           <div class="modal-content">
-             <div class="modal-header">
-               <h1 class="modal-title fs-5" id="exampleModalLabel">Hello World</h1>
-               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-             </div>
-             <div class="modal-body d-flex justify-content-center align-items-center">
-               <img src="img/win/Win1.png" alt="win1" class="windowImgModal mx-auto my-0 d-block">
-               <div id="Win1Window"></div>
-               <div id="firstCode">
-                <span>
-                  <code>
-                    <code><</code>html>
-                    <br>
-                    &nbsp;&nbsp;<code><</code>body>
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<code><</code>h1>Hello World/h1>
-                    <br>
-                    &nbsp;&nbsp;<code><</code>/body>
-                    <br>
-                    <code><</code>/html>
-                  </code>
-                </span>
-              </div>
-             </div>
-             <div class="modal-footer">
-               <button type="button" class="btn border-0 btn-secondary" data-bs-dismiss="modal">Close</button>
-             </div>
-           </div>
-         </div>
-       </div>
-   </div>
-   <div>
-    
-       <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog modal-dialog-scrollable modal-lg ">
-           <div class="modal-content">
-             <div class="modal-header">
-               <h1 class="modal-title fs-5" id="exampleModalLabel">About Me</h1>
-               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-             </div>
-             <div class="modal-body d-flex justify-content-center align-items-center">
-               <img src="img/win/win31.png" alt="win98" id="win3Img"  class="windowImgModal mx-auto my-0 d-block" >
-             </div>
-             <div class="modal-footer">
-               <button type="button" class="btn border-0 btn-secondary" data-bs-dismiss="modal">Close</button>
-               
-             </div>
-           </div>
-         </div>
-       </div>
-   </div>
-   <div>
-       <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog modal-dialog-scrollable modal-lg ">
-           <div class="modal-content">
-             <div class="modal-header">
-               <h1 class="modal-title fs-5" id="exampleModalLabel">Work Experience</h1>
-               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-             </div>
-             <div class="modal-body d-flex justify-content-center align-items-center">
-               <img src="img/win/98Work.png" alt="win98" id="win98Img"  class="windowImgModal mx-auto my-0 d-block"">
-             </div>
-             <div class="modal-footer">
-               <button type="button" class="btn border-0 btn-secondary" data-bs-dismiss="modal">Close</button>
-             </div>
-           </div>
-         </div>
-       </div>
-   </div>
-   <div>
-     <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-       <div class="modal-dialog modal-dialog-scrollable modal-lg ">
-         <div class="modal-content">
-           <div class="modal-header">
-             <h1 class="modal-title fs-5" id="exampleModalLabel">Education</h1>
-             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-           </div>
-           <div class="modal-body d-flex justify-content-center align-items-center">
-             <img src="img/win/xp1.png" alt="winXP" id="winXPImg"  class="windowImgModal mx-auto my-0 d-block"">
-           </div>
-           <div class="modal-footer">
-             <button type="button" class="btn border-0 btn-secondary" data-bs-dismiss="modal">Close</button>
-             
-           </div>
-         </div>
-       </div>
-     </div>
- </div>
- <div>
-   <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-     <div class="modal-dialog modal-dialog-scrollable modal-lg ">
-       <div class="modal-content">
-         <div class="modal-header">
-           <h1 class="modal-title fs-5" id="exampleModalLabel">Skills</h1>
-           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-         </div>
-         <div class="modal-body d-flex justify-content-center align-items-center">
-           <img src="img/win/win7End.png" alt="win7" id="win7Img"  class="windowImgModal mx-auto my-0 d-block"">
-         </div>
-         <div class="modal-footer">
-           <button type="button" class="btn border-0 btn-secondary" data-bs-dismiss="modal">Close</button>
-           
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
- <div>
-   <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-     <div class="modal-dialog modal-dialog-scrollable modal-lg ">
-       <div class="modal-content">
-         <div class="modal-header">
-           <h1 class="modal-title fs-5" id="exampleModalLabel">Software Skills</h1>
-           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-         </div>
-         <div class="modal-body d-flex justify-content-center align-items-center">
-           <img src="img/win/WIN8.png" alt="win8" id="win8Img"  class="windowImgModal mx-auto my-0 d-block"">
-         </div>
-         <div class="modal-footer">
-           <button type="button" class="btn border-0 btn-secondary" data-bs-dismiss="modal">Close</button>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
- <div>
-   <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-     <div class="modal-dialog modal-dialog-scrollable modal-lg ">
-       <div class="modal-content">
-         <div class="modal-header">
-           <h1 class="modal-title fs-5" id="exampleModalLabel">Languages</h1>
-           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-         </div>
-         <div class="modal-body d-flex justify-content-center align-items-center">
-           <img src="img/win/Win10.png" alt="win10" id="win10Img"  class="windowImgModal mx-auto my-0 d-block"">
-         </div>
-         <div class="modal-footer">
-           <button type="button" class="btn border-0 btn-secondary" data-bs-dismiss="modal">Close</button>
-           
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
- <div>
-  <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-lg ">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Contacts</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body d-flex justify-content-center align-items-center">
-          <div id="win11Div">
-
-            <img src="img/win/win11.png" alt="win11" id="win11Img" class="windowImgModal mx-auto my-0 d-block">
-          </div>
-          <a href="tel:+37477036016" id="phone" target="_blank" class="contactLogo position-absolute rounded">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-telephone contact" viewBox="0 0 16 16">
-              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-            </svg>
-          </a>
-          <a href="mailto:aarturpetoyan@gmail.com" target="_blank" id="email" class="contactLogo position-absolute rounded">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-envelope contact" viewBox="0 0 16 16">
-              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/arturpetoyan" target="_blank" id="linkedin" class="contactLogo position-absolute rounded">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-linkedin contact" viewBox="0 0 16 16">
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-            </svg>
-          </a>
-          <a href="https://github.com/ArtPetoyan" target="_blank" id="github" class="contactLogo position-absolute rounded">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-github contact" viewBox="0 0 16 16">
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-            </svg>
-          </a>
-          
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn border-0 btn-secondary" data-bs-dismiss="modal">Close</button>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
- </container>
-  <script src="JavaScript/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+	<div id="menu">
+		<div class = "header">
+			<div id = "menuIcon" onclick = "fn()">
+				<div class ="divX" id ="div1"></div>
+				<div class ="divX" id ="div2"></div>
+				<div class ="divX" id ="div3"></div>
+			</div>
+		</div>
+		<div id="menuListAll">
+			<div class="menuList">
+				<div class="menuOption"></div>
+				<div class="menuOption" onclick=fn()><a href="#">HOME</a></div>
+				<div class="menuOption" ><a href="./about/index.html" >ABOUT ME</a></div>
+				<div class="menuOption"><a href="./works/index.html" >MY WORKS</a></div>
+				<div class="menuOption"><a href="./contacts/index.html" >CONTACTS</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="content" id="contentHome">
+		<div style="display: flex; flex-wrap: wrap;">
+			<h1>Artur&nbsp;</h1>
+			<h1>Petoyan</h1>
+		</div>
+		<div style="margin-top: -10px;">
+			<div style="display: flex; flex-wrap: wrap;">
+				<h5>Web&nbsp;</h5>
+				<h5>Frontend&nbsp;</h5>
+				<h5>Developer</h5>
+			</div>
+			<div style="display: flex;">
+				<div class="icons">
+					<a target="_blank" href="https://www.facebook.com/artur.petoyan">
+						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" fill="currentColor" class="bi bi-facebook p-10" viewBox="0 0 16 16">
+							<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+						  </svg>
+					</a>
+				</div>
+				<div class="icons">
+					<a target="_blank" href="https://github.com/ArtPetoyan">
+						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+							<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+						  </svg>
+					</a>
+				</div>
+				<div class="icons">
+					<a target="_blank" href="https://www.linkedin.com/in/arturpetoyan/">
+						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+							<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+						  </svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="javascript/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Art Shop</title>
+	
+</head>
+<body>
+<main>
+    <div id="selects">
+        <div id="h1"><h1>FILTER</h1></div>
+        <div id = "selectsP2">
+            <div class="selectTitle">
+                <span>Internal Memory</span>
+                <select id="selectROM" class="selects">
+                    <option value="All">See All</option>
+                    <option value="64">64 Gb</option>
+                    <option value="128">128 Gb</option>
+                    <option value="256">256 Gb</option>
+                    <option value="512">512 Gb</option>
+                </select>
+            </div>
+            <div class="selectTitle">
+                <span>RAM</span>
+        <select id="selectRAM" class="selects">
+            <option value="All">See All</option>
+            <option value="4">4 Gb</option>
+            <option value="8">8 Gb</option>
+            <option value="12">12 Gb</option>
+            <option value="16">16 Gb</option>
+        </select>
+            </div>
+        <div class="selectTitle">
+            <span>Availability</span>
+        <select id="selectstock" class="selects">
+            <option value="All">See All</option>
+            <option value="Available">Available</option>
+            <option value="Not Available">Not Available</option>
+        </select>
+        </div>
+        <div class="selectTitle">
+            <span></span>
+            <button id="btnOK" class="selects">Clear All</button>
+        </div>
+        </div>
+</div>
+    <div id ="goods"></div>
+</main>
+
+<script src="javaScript.js"></script>
+</body>
+</html>
+

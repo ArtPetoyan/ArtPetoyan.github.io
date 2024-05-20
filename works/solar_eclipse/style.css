@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: black;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.star1 {
+	position: absolute;
+	transition: 20000ms linear;
+}
+.starMove {
+	animation: move 60s 0s linear infinite;
+}
+#earth {
+	position: absolute;
+	width: 3000px;
+	height: 800px;
+	border: 4px solid rgba(214, 247, 255, 0.7);
+	background-color: black;
+	z-index: 2;
+	border-radius: 50%;
+	right: -710px;
+	top: 680px;
+	box-shadow: 0px 0px 100px 20px rgba(117, 178, 228, 0.545);
+}
+#sub {
+	width: 120px;
+	height: 50px;
+	border: 2px solid rgba(255, 255, 255, 0.849);
+	background-color: black;
+	border-radius: 10px;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-shadow: -3px 2px 6px rgb(255, 0, 0);
+	color: rgba(255, 255, 255, 0.803);
+	font-weight: bold;
+	font-size: 18px;
+	transition: 500ms;
+	box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.545);
+	margin: auto;
+	margin-top: 100px;
+	transform: scale(1.5);
+}
+#sub:hover {
+	background-image: linear-gradient(to left, rgb(250, 250, 250), rgba(91, 91, 91, 0.671));
+	border: 2px solid transparent;
+	color: black;
+	text-shadow: -3px 2px 6px rgb(226, 225, 225);
+	box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.545);
+}
+#img1 {
+	width: 100%;
+	opacity: 1;
+	filter: brightness(40%);
+	z-index: 1;
+}
+#cont {
+	transition: 10000ms;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	z-index: 1;
+}
+.anim1 {
+	animation: shadow 60s 0s linear;
+}
+
+#text {
+	width: 500px;
+	height: 600px;
+	position: absolute;
+	top: 50px;
+	font-size: 23px;
+	color: white;
+	transition: 1000ms;
+}
+.right {
+	right: 50px;
+	visibility: visible;
+}
+.left {
+	left: 50px;
+}
+#text::first-letter {
+	color: rgb(167, 217, 250);
+	font-size: 38px;
+}
+@keyframes move {
+	from {
+		transform: translateX(0px) translateY(0px) scale(1);
+	}
+	to {
+		transform: translateX(-1000px) translateY(10px) scale(2);
+	}
+}
+
+@keyframes shadow {
+	0% {
+		box-shadow: -900px 350px 40px 50px rgba(246, 246, 70);
+	}
+	25% {
+		box-shadow: -480px 150px 50px 60px rgba(255, 255, 71);
+	}
+	50% {
+		box-shadow: 0px 0px 60px 70px rgba(119, 34, 14);
+	}
+	75% {
+		box-shadow: 480px 150px 50px 60px rgba(255, 255, 71);
+	}
+	100% {
+		box-shadow: 900px 350px 40px 50px rgba(255, 255, 70);
+	}
+}

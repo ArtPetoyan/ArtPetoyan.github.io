@@ -1,18 +1,23 @@
 let body = document.querySelector('body');
 let menuListAll = document.querySelector('#menuListAll');
-let contentHome = document.querySelector('#contentHome');
+let contentAbout = document.querySelector('#contentAbout');
 let menu = document.querySelector('#menu');
+let text1 = `Hi! 👋 <br> I'm Artur. I'm ${new Date().getFullYear() - 2000} years old. I have started to learn programming since august 2022 and every day I faced a new challenge and overcame it. On the right side you can see my first step into the world of coding.`;
 let count = 0;
+document.querySelector('.mainText').innerHTML = text1;
 function onOpenSidebar (count) {
 	if(Math.abs(count % 2)) {
-		openSidebar()
+		openSidebar();
+		if (innerWidth < 980) contentAbout.style.display = 'none';
 	} else {
-		closeSidebar()
+		closeSidebar();
+		if (innerWidth < 980) contentAbout.style.display = 'block';
 	}
 }
 function openSidebar () {
 	menuListAll.style.marginLeft = "0px";
-		contentHome.style.zIndex = "-99";
+	menuListAll.style.transition = "500ms";
+		contentAbout.style.zIndex = "-99";
 		body.style.setProperty("--somecolor", "#375366cc");
 		for (let i = 1; i <= 3; i++) {
 			(
@@ -35,9 +40,9 @@ function openSidebar () {
 }
 function closeSidebar() {
 	body.style.setProperty("--somecolor", "");
-	
-		contentHome.style.zIndex = "0";
+		contentAbout.style.zIndex = "0";
 		menuListAll.style.marginLeft = "-100%";
+		menuListAll.style.transition = "100ms";
 		for (let i = 1; i <= 3; i++) {
 			(
 				(x) => {
@@ -68,9 +73,6 @@ onclick = (e) => {
 	}
 };
 
-body.onmousemove = (e) => {
-	contentHome.style.boxShadow = `${e.x / 10 - 10}px ${e.y / 10 - 10}px 50px 20px #18303d`;
-}
 body.addEventListener('contextmenu', function(ev) {
     ev.preventDefault();
     return false;

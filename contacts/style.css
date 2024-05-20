@@ -1,0 +1,167 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+	background: url(../images/background.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+body:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	transition: 500ms;
+    background: var(--somecolor, rgba(51, 105, 133, 0.447));
+}
+#menuIcon > #div1, #div2, #div3 {
+	border-radius: 10px;
+	position: absolute;
+	width: 30px;
+	height: 3px;
+	transition: 300ms;
+	transition-timing-function: cubic-bezier(0, -1, 0, 2);
+	background-color: rgba(96, 255, 233, 0.8);
+  }
+  #div1 {
+	top: 4px;
+	transform: rotate(0turn);
+  }
+  #div2 {
+	transform: rotate(0.5turn);
+	top: 15px;
+  }
+  #div3 {
+	transform: rotate(0.5turn);
+	top: 26px;
+  }
+  #menuIcon {
+	position: absolute;
+	width: 40px;
+	height: 34px;
+	left: 15px;
+	top: 10px;
+	cursor: pointer;
+  }
+  .header {
+	background-color:rgba(235, 62, 62, 0);
+	position: absolute;
+	width: 100%;
+	height: 55px;
+  }
+  #menuListAll {
+	width: 30%;
+	height: 100vh;
+	background-color: #5385a7f5;
+	margin-left: -50%;
+	transition: 500ms;
+  }
+  .menuList {
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+  }
+  .menuOption {
+	font-size: 25px;
+	font-weight: 450;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	margin: 5px ;
+	cursor: pointer;
+  }
+ a {
+	color: #212529;
+	text-decoration: none;
+	width: 100%;
+	text-align: center;
+  }
+  .content {
+	display: flex;
+    position: absolute;
+    top: 10%;
+    width: 96%;
+	margin-left: 2%;
+    padding: 30px;
+    flex-direction: column;
+    background-color: #41abb9da;
+	transition: 500ms;
+  }
+  #contactsMeText h1 {
+	font-size: 56px;
+	font-weight: 700;
+  } 
+  #contactsMeText h1::first-letter {
+	font-size: 95px;
+	color:rgba(96, 255, 233, 0.8)
+  }  
+  
+  .mainText {
+	font-size: 25px;
+	margin-right: 30px;
+	text-align: justify;
+  }
+.btn-info {
+	width: 300px;
+	height: 100px;
+}
+#contacts {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 5px;
+	width: 100%;
+}
+
+  @media (hover:hover) {
+	.menuOption:hover {
+		background-color: #266f7cdb;
+	  }
+  }
+  @media (hover:none) {
+	.menuOption:active {
+		background-color: #266f7cdb;
+	  }
+  }
+
+  @media screen and (max-width: 980px) {
+	body {
+		overflow: auto;
+	}
+	#menuListAll {
+		width: 100%;
+		height: 100vh;
+		background-color: #375366e6;
+		margin-left: -100%;
+		transition: 500ms;
+	  }
+	  #contactsMeText h1 {
+		text-align: center;
+		font-size: 40px;
+		font-weight: 700;
+	  } 
+	  #contactsMeText h1::first-letter {
+		font-size: 65px;
+		color:rgba(96, 255, 233, 0.8)
+	  }  
+	  #contacts {
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		width: 100%;
+	}
+	  .mainText {
+		font-size: 25px;
+		margin-right: 10px;
+		text-align: justify;
+	  }
+  }
