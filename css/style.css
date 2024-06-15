@@ -89,7 +89,7 @@ body:after {
     flex-direction: column;
     flex-wrap: wrap;
     position: absolute;
-    top: 60%;
+	bottom: 10%;
     width: 96%;
 	margin-left: 2%;
     padding: 30px;
