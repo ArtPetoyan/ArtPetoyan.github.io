@@ -1,6 +1,5 @@
 let textHistoryWin1 = `Hello, I'm Artur. I'm ${new Date().getFullYear() - 2000} years old. I have started to learn programming since august 2022 and every day I faced a new challenge and overcame it. On the right side you can see my first step into the world of coding.`;
-// let textHeader = 'Web CV in front of the history Microsoft Windows';
-let textHeader = 'W';
+let textHeader = 'Web CV in front of the history Microsoft Windows';
 let logos = document.querySelectorAll('.logoBtn');
 let pointer = document.querySelector('#pointer');
 let k = 0;
