@@ -68,7 +68,7 @@ function text(text1, that, time) {
   let a = 0;
   let fnInt = setInterval(() => {
     that.innerHTML += text1[a];
-    a++
+    a++;
     if (a == text1.length) {
       clearInterval(fnInt)
       document.querySelector('#logos').style.transform = 'scale(1)';
