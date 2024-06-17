@@ -20,11 +20,11 @@ function openSidebar () {
 					let menuDiv = document.getElementById(`div${x}`);
 					menuDiv.style = "top: 15px; position: absolute; border-radius: 10px; width: 34px";
 					if (x == 1) {
-						menuDiv.style.backgroundColor = "rgb(0 0 0 / 60%)";
+						menuDiv.style.backgroundColor = "#a1ccdc";
 						menuDiv.style.transform = "rotate(0.125turn)";
 					} else if (x == 2){ 
 						menuDiv.style.transform = "rotate(0.375turn)";
-						menuDiv.style.backgroundColor = "rgb(0 0 0 / 60%)";
+						menuDiv.style.backgroundColor = "#a1ccdc";
 					} else {
 						menuDiv.style.transform = "rotate(0.375turn)";
 						menuDiv.style.backgroundColor = "rgb(256, 256, 256, 0)";
@@ -69,7 +69,8 @@ onclick = (e) => {
 };
 
 body.onmousemove = (e) => {
-	contentHome.style.boxShadow = `${e.x / 10 - 10}px ${e.y / 10 - 10}px 50px 20px #18303d`;
+	contentHome.style.boxShadow = `${e.x / 10 - innerWidth / 20}px ${e.y / 10 - innerHeight / 20}px 50px 10px #096b90e6`;
+	// contentHome.style.boxShadow = `${e.x / 10 - 10}px ${e.y / 10 - 10}px 50px 30px #096b90e6`;
 }
 body.addEventListener('contextmenu', function(ev) {
     ev.preventDefault();

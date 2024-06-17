@@ -18,7 +18,7 @@ body:after {
     height: 100%;
     z-index: -1;
 	transition: 500ms;
-    background: var(--somecolor, rgba(51, 105, 133, 0.447));
+    background: var(--somecolor, #042b447d);
 }
 #menuIcon > #div1, #div2, #div3 {
 	border-radius: 10px;
@@ -27,7 +27,7 @@ body:after {
 	height: 3px;
 	transition: 300ms;
 	transition-timing-function: cubic-bezier(0, -1, 0, 2);
-	background-color: rgba(96, 255, 233, 0.8);
+	background-color: #71b7d5;
   }
   #div1 {
 	top: 4px;
@@ -58,7 +58,7 @@ body:after {
   #menuListAll {
 	width: 30%;
 	height: 100vh;
-	background-color: #5385a7f5;
+	background-color: #042c44e1;
 	margin-left: -50%;
 	transition: 500ms;
   }
@@ -78,11 +78,14 @@ body:after {
 	cursor: pointer;
   }
  a {
-	color: #212529;
+	color: #a1ccdc;
 	text-decoration: none;
 	width: 100%;
 	text-align: center;
   }
+.contact a {
+	color: #08171ee4;
+}
   .content {
 	display: flex;
     position: absolute;
@@ -91,16 +94,17 @@ body:after {
 	margin-left: 2%;
     padding: 30px;
     flex-direction: column;
-    background-color: #41abb9da;
+    background-color: #096b90e6;
 	transition: 500ms;
   }
   #contactsMeText h1 {
 	font-size: 56px;
 	font-weight: 700;
+	color:#08171ee4;
   } 
   #contactsMeText h1::first-letter {
 	font-size: 95px;
-	color:rgba(96, 255, 233, 0.8)
+	color:#a1ccdc
   }  
   
   .mainText {
@@ -123,12 +127,12 @@ body:after {
 
   @media (hover:hover) {
 	.menuOption:hover {
-		background-color: #266f7cdb;
+		background-color: #096b90;
 	  }
   }
   @media (hover:none) {
 	.menuOption:active {
-		background-color: #266f7cdb;
+		background-color: #096b90;
 	  }
   }
 
@@ -139,7 +143,7 @@ body:after {
 	#menuListAll {
 		width: 100%;
 		height: 100vh;
-		background-color: #375366e6;
+		background-color: #042c44e1;
 		margin-left: -100%;
 		transition: 500ms;
 	  }
@@ -150,7 +154,7 @@ body:after {
 	  } 
 	  #contactsMeText h1::first-letter {
 		font-size: 65px;
-		color:rgba(96, 255, 233, 0.8)
+	
 	  }  
 	  #contacts {
 		margin-top: 15px;
