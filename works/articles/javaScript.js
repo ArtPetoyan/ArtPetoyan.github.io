@@ -67,7 +67,7 @@ function createArticleFn() {
 	let img = file.value;
 	if (!img.includes('http')) {
 		k++;
-		img = `https://source.unsplash.com/random/${k}x600`;
+		img = `https://picsum.photos/${k}/600`;
 	}
 	let textH1 = title.value.substring(0, 18);
 	if (textH1 == "") return;
